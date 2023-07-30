@@ -18,7 +18,7 @@ if [ -e ./"$infile" ] && [ -e ./"$maskfile" ] && [ ! -z  "$outfile" ]; then
 	hexdump_maskfile=$(xxd -g 1 -i "$maskfile")
 	hexdump_outfile=""
 	echo "$hexdump_infile"
-#	echo "$hexdump_maskfile"
+	echo "$hexdump_maskfile"
 	len_hexdump_infile=$(echo "$hexdump_infile" | wc -l)
 	len_hexdump_maskfile=$(echo "$hexdump_maskfile" | wc -l)
 
